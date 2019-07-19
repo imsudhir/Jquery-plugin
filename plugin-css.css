@@ -1,6 +1,3 @@
-
-
-<style>
 .switch {
   position: relative;
   display: inline-block;
@@ -60,10 +57,118 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-.check-button{
+.topleftcenter{
    position: fixed;
    top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.toprightcenter{
+   position: fixed;
+   top:50%;
+   right: 0%;
+  /* -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+}
+.bottomleft{
+   position: fixed;
+   bottom: 0%;
+   left:0%;
+  /* -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+}
+.bottomright{
+   position: fixed;
+   bottom: 0%;
+   right:0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+main {
+  width: 260px;
+  margin: 0 auto;
+  padding: 20px 0; }
+  main .schedule-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+    main .schedule-row .label {
+      width: 60px; }
+    main .schedule-row select {
+      width: calc(100% - 70px);
+      height: 30px;
+      border: none;
+      background: #747270;
+      color: #fff;
+      padding: 0 5px;
+      border-radius: 5px; }
+  main .time-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; }
+    main .time-row .label:first-child {
+      width: 60px; }
+    main .time-row input[type="time"] {
+      width: 76px;
+      height: 30px;
+      border-radius: 5px;
+      background: #747270;
+      color: #fff;
+      border: none;
+      padding-left: 5px; }
+      main .time-row input[type="time"]::-webkit-clear-button {
+        display: none !important; }
+      main .time-row input[type="time"]::-webkit-inner-spin-button {
+        opacity: 1 !important;
+        height: 30px; }
+  main .range-row {
+    margin-top: 25px; }
+    main .range-row .label {
+      margin-bottom: 10px; }
+    main .range-row input[type="range"] {
+      width: 100%;
+      margin-bottom: 6px; }
+    main .range-row .scale {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      padding: 0 6px; }
+      main .range-row .scale .point {
+        width: 1px;
+        height: 8px;
+        background: #5f5e5b; }
+    main .range-row .range-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      font-size: 10px; }
+  main .colors-row .label {
+    margin-bottom: 10px; }
+  main .colors-row .colors-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    main .colors-row .colors-box label [type="radio"] {
+      display: none; }
+    main .colors-row .colors-box label .color {
+      width: 60px;
+      height: 30px;
+      margin-bottom: 7px;
+      border-bottom: 2px solid transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    main .colors-row .colors-box label [type="radio"]:checked + .color:after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      opacity: .5;
+      background: url(/img/eye.svg) center/contain no-repeat; }
